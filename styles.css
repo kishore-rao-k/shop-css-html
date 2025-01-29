@@ -1,0 +1,170 @@
+/* Reset default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    background-color: white;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', 'Noto', sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+.shop-app[unresolved] {
+    display: block;
+    min-height: 101vh;
+    line-height: 68px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.3em;
+    color: #202020;
+    padding: 0 16px;
+    overflow: visible;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* border: 2px solid red; */
+    margin-bottom: 44px;
+}
+
+.img-class {
+    height: 240px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.category h2 {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.category button {
+    border: 2px solid black;
+    padding-left: 44px;
+    padding-right: 44px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.T-shirt-category {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* border: 2px solid red; */
+
+
+}
+
+.category1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* border: 2px solid red; */
+    margin-bottom: 40px;
+}
+
+.T-shirt-category button {
+    border: 2px solid black;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.T-shirt-category h2 {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    /* border: 2px solid red; */
+    line-height: 24px;
+    margin-top: 20px;
+}
+
+.footer-div {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 6px;
+    margin-top: 8px;
+    margin-left: 127.5px;
+    margin-right: 127.5px;
+    margin-bottom: 0px;
+}
+
+/* ----------------mens_outerwear-header------------------------------- */
+.mens_outerwear-header {
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    /* Space between items */
+    justify-content: center;
+    /* Center items horizontally */
+    align-items: center;
+    /* Center items vertically */
+    text-align: center;
+    /* Center text inside each item */
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 32px;
+}
+
+.grid-container li {
+    list-style: none;
+    /* Removes default bullet points */
+    display: flex;
+    flex-direction: column;
+    /* Stack elements vertically */
+    align-items: center;
+    /* Center content horizontally */
+    justify-content: center;
+    /* Center content vertically */
+    /* border: 1px solid red; */
+    background: white;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.mo-img-class {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+.title {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 10px 0;
+
+}
+
+.price {
+    font-size: 12px;
+    color: gray;
+}
