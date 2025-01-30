@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="nav-container">
+        <div>
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+        <div class="nav-shop">
+            <a class="nav-shop-name">SHOP</a>
+        </div>
+        <div class="nav-items">
+            <img class="pd-back" src="images/grocery-store.png" alt="1">
+        </div>
+    </div>
+    <header class="c-header">
+        <h1 class="c-h1">Your Cart</h1>
+        <p>(1 item)</p>
+    </header>
+
+    <div class="c-container">
+        <div class="c-inner-container">
+            <div class="c-item">
+                <img class="c-img-class" src="images/Men's Outerwear/1.jpg" alt="Men's Jacket">
+            </div>
+
+            <div class="c-item1">
+                <div class="c-inner-item">
+                    <p>Men's Tech Shell Full-Zip</p>
+                    <img class="c-img-class1" src="images/close.png" alt="Remove">
+                </div>
+
+                <div class="c-detail">
+
+                    <div class="c-quantity">
+                        <label>Qty:</label>
+                        <select id="quantitySelect" aria-label="Change quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+
+
+                    <div class="c-size">Size: <span>M</span></div>
+                    <div class="c-price">$50.20</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="c-total">
+            Total: <span class="c-amount">$50.20</span>
+        </div>
+    </div>
+    <div class="pd-add-to-cart">
+        <button class="pd-cart-button">CHECKOUT</button>
+    </div>
+</body>
+
+</html>
