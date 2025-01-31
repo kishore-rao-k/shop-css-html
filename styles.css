@@ -45,8 +45,14 @@
     letter-spacing: 4.8px;
     line-height: 24px;
     text-align: center;
-    text-decoration-color: rgb(32, 32, 32);
+    text-decoration: none;
+    color: black;
 
+
+}
+
+.navbar {
+    display: none;
 }
 
 .h-container {
@@ -88,6 +94,11 @@
     background-color: white;
 
     font-weight: 500;
+}
+
+.category button a {
+    text-decoration: none;
+    color: black;
 }
 
 .T-shirt-category {
@@ -738,7 +749,38 @@ input::placeholder {
     background-color: #172c50;
 }
 
+
+
 @media (min-width: 1024px) {
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        padding: 15px 0;
+        font-family: Arial, sans-serif;
+        background-color: transparent;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .navbar a:hover {
+        text-decoration: underline;
+    }
+
+    /* -------------------- */
     .h-main {
         max-width: 1440px;
         margin: 0 auto;
