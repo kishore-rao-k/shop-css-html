@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="nav-container">
+        <div>
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+        <div class="nav-shop">
+            <a class="nav-shop-name">SHOP</a>
+        </div>
+        <div class="nav-items">
+            <img class="pd-back" src="images/grocery-store.png" alt="1">
+        </div>
+    </div>
+    <div class="co-container">
+        <header>
+            <h1>Checkout</h1>
+            <span>Shop is a demo app - form data will not be sent</span>
+        </header>
+        <section class="co-inner-container">
+            <h2>Account Information</h2>
+            <div class="co-items">
+                <input type="text" id="accountEmail" name="accountEmail" placeholder="Emai" required>
+            </div>
+            <h2>Shipping Address</h2>
+            <div class="co-items">
+
+                <input type="text" id="shipAddress" name="shipAddress" placeholder="Address" required>
+            </div>
+            <div class="co-items">
+                <input type="text" id="shipCity" name="shipCity" placeholder="City" required>
+            </div>
+
+            <div class="co-inner-items">
+                <input type="text" id="shipState" name="shipState" placeholder="State/Province" required>
+
+                <input type="text" id="shipZip" name="shipZip" placeholder="Zip/Postal Code" required>
+            </div>
+            <div class="co-country-item">
+
+                <div class="co-country">Country</div>
+                <div class="co-country-select">
+                    <select id="shipCountry" name="shipCountry" required>
+                        <option value="US" selected>United States</option>
+                        <option value="CA">Canada</option>
+                    </select>
+                </div>
+            </div>
+            <h2>Billing Address</h2>
+            <div class="co-check">
+                <input type="checkbox" id="billingCheckbox">
+                <span class="checkmark"></span>
+                <label for="billingCheckbox">Use different billing address</label>
+            </div>
+        </section>
+
+        <section class="co-inner-container">
+            <h2>Payment Method</h2>
+            <div class="co-items">
+
+                <input type="text" id="ccName" name="ccName" placeholder="Cardholder Name" required>
+            </div>
+            <div class="co-items">
+
+                <input type="text" id="ccNumber" name="ccNumber" placeholder="Card Number" required>
+            </div>
+            <div class="co-expiry">
+                <div class="co-inner-expiry">
+                    <label for="ccExpMonth">Expiry</label>
+                    <div class="co-expiry-select">
+                        <select id="ccExpMonth" name="ccExpMonth" required>
+                            <option value="01" selected>Jan</option>
+                            <option value="02">Feb</option>
+                            <option value="03">Mar</option>
+                            <option value="04">Apr</option>
+                            <option value="05">May</option>
+                            <option value="06">Jun</option>
+                            <option value="07">Jul</option>
+                            <option value="08">Aug</option>
+                            <option value="09">Sep</option>
+                            <option value="10">Oct</option>
+                            <option value="11">Nov</option>
+                            <option value="12">Dec</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="co-year-select">
+                    <select id="ccExpYear" name="ccExpYear" required>
+                        <option value="2023" selected>2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                    </select>
+                </div>
+                <div class="co-cvv">
+                    <input type="text" id="ccCVV" name="ccCVV" placeholder="CVV" required>
+                </div>
+            </div>
+            <h2>Order Summary</h2>
+            <div class="co-pd">
+                <div>Men's Tech Shell Full-Zip</div>
+                <div>$50.20</div>
+            </div>
+            <div class="co-total">
+                <div>Total</div>
+                <div>$50.20</div>
+            </div>
+            <div class="pd-add-to-cart">
+                <button class="pd-cart-button">PLACE ORDER</button>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
