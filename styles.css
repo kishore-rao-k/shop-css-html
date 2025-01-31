@@ -170,7 +170,8 @@ footer {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -456,6 +457,11 @@ footer {
 
 }
 
+.co-inner-container1 {
+    display: flex;
+    flex-direction: column;
+}
+
 .co-items {
     display: flex;
     align-items: center;
@@ -714,4 +720,116 @@ input::placeholder {
     font-size: 13px;
     line-height: 24px;
     /* border: 1px solid red; */
+
+}
+
+.co-place-order {
+    display: inline-block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.co-place-order-button {
+    padding: 20px;
+    width: 100%;
+    color: #fff;
+    background-color: #172c50;
+}
+
+@media (min-width: 1024px) {
+    .h-main {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .mo-img-class {
+        height: 300px;
+        width: 300px;
+        object-fit: cover;
+        margin-top: 32px;
+        margin-bottom: 16px;
+    }
+
+    .pd-container {
+        flex-direction: row;
+        height: 728px;
+        width: 1440px;
+    }
+
+    .pd-img-class {
+        height: 600px;
+        width: 600px;
+    }
+
+    .pd-add-to-cart {
+        position: unset;
+
+
+    }
+
+    .pd-cart-button {
+        display: inline-block;
+        border: 2px solid black;
+        padding-left: 44px;
+        padding-right: 44px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        background-color: white;
+        color: black;
+        font-weight: 500;
+    }
+
+    .pd-details {
+        margin-top: 64px;
+        margin-bottom: 64px;
+        margin-left: 32px;
+        margin-right: 32px;
+        width: 400px;
+        padding: 0;
+    }
+
+    .pd-size {
+        width: 100%;
+    }
+
+    /* ------------checkout------ */
+    .co-container {
+        margin-top: 40px;
+        margin-left: 246px;
+        margin-right: 246px;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-bottom: 48px;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .co-inner-container1 {
+        margin-left: 80px;
+    }
+
+    .co-place-order {
+        position: unset;
+
+
+    }
+
+    .co-place-order-button {
+        display: inline-block;
+        border: 2px solid black;
+        padding-left: 44px;
+        padding-right: 44px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        width: 192px;
+        background-color: white;
+        color: black;
+        font-weight: 500;
+    }
 }
