@@ -4,11 +4,11 @@
     box-sizing: border-box;
 }
 
-body {
+/* body {
     font-family: 'Roboto', 'Noto', sans-serif;
     line-height: 1.5;
     min-height: 100vh;
-}
+} */
 
 .nav-container {
     display: flex;
@@ -49,6 +49,10 @@ body {
 
 }
 
+.h-container {
+    display: flex;
+    flex-direction: column;
+}
 
 .category {
     display: flex;
@@ -65,6 +69,7 @@ body {
     width: 100%;
     object-fit: cover;
 }
+
 
 .category h2 {
     margin-top: 24px;
@@ -96,6 +101,16 @@ body {
 
 }
 
+.T-shirt-category div {
+    width: 50vw;
+}
+
+.h-span {
+    font-size: 1.1em;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
 .category1 {
     display: flex;
     flex-direction: column;
@@ -105,6 +120,7 @@ body {
     /* border: 2px solid red; */
     margin-bottom: 40px;
 }
+
 
 .T-shirt-category button {
     display: inline-block;
@@ -128,8 +144,9 @@ body {
 
 /* Footer styling */
 footer {
-    text-align: center;
-    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     line-height: 24px;
     margin-top: 20px;
 }
@@ -138,6 +155,7 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
+
     padding: 6px;
     margin-top: 8px;
     margin-left: 127.5px;
@@ -422,13 +440,6 @@ footer {
 
 /* --------------------------checkout-page---------------------------------- */
 
-body {
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    color: #333;
-    background-color: #f9f9f9;
-}
-
 .co-container {
     display: flex;
     flex-direction: column;
@@ -462,22 +473,22 @@ body {
     gap: 10px;
 }
 
-h1 {
+.co-h1 {
     margin-bottom: 4px;
     font-size: 1.1em;
     font-weight: 500;
 }
 
-header {
+.co-header {
     text-align: center;
 }
 
-span {
+.co-span {
     font-size: 12px;
     color: #757575;
 }
 
-h2 {
+.co-h2 {
     display: block;
     height: 19.5px;
     width: 382px;
