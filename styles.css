@@ -324,8 +324,11 @@ footer {
 .pd-cart-button {
     padding: 20px;
     width: 100%;
-    color: #fff;
+
     background-color: #172c50;
+    text-decoration: none;
+    color: #fff;
+
 }
 
 /* ------------------------------------------cart-page-------------------- */
